@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = prompt ('nhập a')
+        var b = prompt ('nhập b')
+        if (a % b == 0 ) {
+            alert('a chia hết cho b')
+        } else {
+            alert('a không chia hết cho b')
+        }
+
+
+
+
+
+
+
+        var age = prompt ('Nhập số tuổi')
+        if (age >= 16) {
+            alert('Đủ điều kiện học lớp 10')
+        } else {
+            alert('Không đủ điều kiện học lớp 10')
+        }
+
+
+
+
+
+        var a = prompt ('Nhập số bất kỳ')
+          if (a > 0) {
+            alert('Lớn hơn 0')
+          } else if  (a < 0){
+            alert('Nhỏ hơn 0')
+          } else{
+            alert('Bằng 0')
+          }
+
+
+
+
+
+        var a = prompt ('Nhập')
+        var b = prompt ('Nhập')
+        var c = prompt ('nhập')
+        if (a > b && a > c) {
+            alert ('a lớn nhất')
+        } else if (b > c) {
+            alert('b lớn nhất')
+        }
+        else{
+            alert('c lớn nhất')
+        }
+
+
+
+
+
+        var diem_bai_kiem_tra = parseInt(prompt('nhập điểm kiểm tra'))
+        var diem_giua_ky = parseInt(prompt('nhập điểm kiểm tra'))
+        var diem_cuoi_ky = parseInt(prompt('nhập điểm kiểm tra'))
+        var dtb = (diem_bai_kiem_tra + diem_giua_ky*2+ diem_cuoi_ky*3) / 6
+        if (dtb >= 8) {
+            alert('Học sinh giỏi')
+        } else if (dtb < 8 && dtb >= 6.5) {
+            alert('Học sinh tiên tién')
+        }
+        else if(dtb<6.5 && dtb>=5) {
+            alert('Học sinh trung bình')
+        }else{
+            alert('Ở lại lớp')
+        }
+
+
+
+
+
+        
+        var mang = prompt('Nhập mạng')
+        var sophut = prompt('Nhập số phút gọi')
+        if (mang == 'viettel') {
+            var cuoc = sophut * 1000
+            alert('Số tiền phải trả nội mạng:' + cuoc + 'vnd')
+        } else {
+            var cuoc = sophut * 2000
+            alert('Số tiền phải trả ngoại mạng:' + cuoc + 'vnd')
+        }
+
+
+    </script>
+</body>
+
+</html>
