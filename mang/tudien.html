@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="string">Nhập từ: </label>
+    <input type="text" name="" id="string">
+    <button onclick="nhap()">Đừng nhấp em</button>
+    <p id="result"></p>
+    <script>
+        function nhap() {
+            let arr_eng = ["banana", "apple", "orange", "pen", "pencil", "book"];
+            let arr_vie = ["chuối", "táo", "cam", "bút", "bút chì", "sách"];
+            for (let i = 0, j = 0; i < arr_eng.length, j < arr_vie.length; i++, j++) {
+                let string = document.getElementById("string").value;
+                if (string === arr_eng[i]) {
+                    alert(arr_vie[i]);
+                    break;
+                }
+                else if (string === arr_vie[i]) {
+                    alert(arr_eng[i]);
+                    break;
+                }
+                else {
+                    alert('Sai cách nhấp')
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
