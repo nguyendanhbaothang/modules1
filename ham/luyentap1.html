@@ -9,6 +9,7 @@
 </head>
 
 <body>
+   
     <script>
         // Bài tập 1 : Tạo hàm alertMessage() hiển thị hộp thoại chứa chuỗi  "Xin chao". Gọi hàm từ trong phần <body> của trang web.
         //    function alertMessage(){
@@ -58,32 +59,27 @@
         //bài 5:
         let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
         let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
-
+        let star = prompt("Nhập vào ngôi sao: ")
         function check_star(star) {
             let index_star1 = 0;
             let result = "";
-            for (let i = 0; i < star1.length; i++) {
-                if (star == star1[i]) {
-                    index_star1 = i;
-                    for (let j = 0; j < star2.length; j++) {
-                        if (index_star1 == j) {
-                            result = star2[j];
-                            return result;
-                        } else {
-                            result = "Không tìm thấy chòm sao"
-                            return result;
-                        }
-                    }
-                } else {
-                    result = "Không tìm thấy sao";
-                    return result;
-                }
-            }
+            for (let i = 0,j = 0; i < star1.length,j <star2.length; i++,j++) {
 
-        }
-        let star = prompt("Nhập vào ngôi sao: ")
+                if (star === star1[i]){
+                alert(star2[i]);
+                break;
+            }
+                else if(star === star2[i]){
+                    alert(star1[i]);
+                    break;
+                }
+            }}
+
+          
         document.write(check_star(star));
 
+
+        
 
 
 
