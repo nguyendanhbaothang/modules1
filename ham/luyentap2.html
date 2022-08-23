@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <script>
+        // Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+
+        //     function binh_phuong(a){
+        //         return a*a
+
+        //     }
+        //    let a = binh_phuong(4);
+        //     console.log(a);
+
+        // Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+
+        // function chu_vi(r){
+        //     return 2*r*3.14
+        // }
+        // let tong_1 = chu_vi(5)
+        // console.log('Chu vi hình tròn là:'+tong_1);
+
+
+        // function dien_tich(r){
+        //     return 3.14*r*r
+        // }
+        // let tong_2 = dien_tich(5)
+        // console.log('Diện tích hình tròn là:'+tong_2);
+
+
+
+        //  Bài 3:Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+        // function factorialize(num) {
+
+        //     var result = num;
+        //     if (num === 0 || num === 1) {
+
+        //         return 1;
+        //     }
+
+        //     while (num > 1) {
+        //         num--;
+        //         result = num * result;
+        //     }
+        //     return result;
+        // }
+        // let a = prompt('')
+        // console.log(factorialize(a));
+
+
+
+        // Bài 4 :Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+        //     function kiem_tra_so_nhap_vao(gia_tri){
+        //         if(typeof gia_tri == 'number'){
+        //             return true
+        //         }else{
+        //             return false
+        //         }
+        //     }
+        //    console.log(kiem_tra_so_nhap_vao(5));
+        //    console.log(kiem_tra_so_nhap_vao('bạn là ai'));
+
+
+        //Bài 5:Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+        // function so_nho_nhat(a, b, c) {
+        //     if (a < b && b < c) {
+        //         return a
+        //     } else if (b < a && b < c) {
+        //         return b
+        //     } else {
+        //         return c
+        //     }
+        // }
+        // console.log(so_nho_nhat(4, -2, -7))
+
+
+
+        //Bài 6:Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.
+        // let nhap_vao = prompt('nhap vao');
+
+        // function check_number(a) {
+        //     if (nhap_vao > 0 && nhap_vao % 1 == 0) {
+        //         return ('là số nguyên dương');
+        //     } else {
+        //         return ('không phải là số nguyên dương');
+        //     }
+        // }
+        // alert(check_number(nhap_vao))
+
+
+        //Bài 7:Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+        // function so_nguyen(a, b) {
+        //     let c = a
+        //     a = b
+        //     b = c
+        //     console.log(a, b)
+
+        // }
+        // console.log(so_nguyen(5, 6))
+
+
+        //Bài 8 :Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+        // var b = [5,6,7,8]
+        // function dao_nguoc(a) {
+        //     let first = 0;
+        //     let last = a.length - 1;
+        //     while (first < last) {
+        //         let b = a[first];
+        //         a[first] = a[last];
+        //         a[last] = b;
+        //         first++;
+        //         last--;
+        //     }
+        //    return a
+        // }
+        // console.log(dao_nguoc(b));
+
+        //Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. 
+
+        var ham = ['n', 3, 'i','h', 4, 5, 'b', 2, 2];
+            var dem = 0;
+            function test(ham, a) {
+                for (i = 0; i < ham.length; i++) {
+                    if(a === ham[i]){
+                        dem++;
+                    }
+                }
+                if(dem > 0){
+                    console.log(dem);
+                }else if(dem <= 0){
+                    console.log(-1);
+                }
+            }
+            test(ham,10 );
+
+
+
+
+    </script>
 </body>
+
 </html>
