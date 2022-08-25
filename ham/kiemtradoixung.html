@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>[*Bài tập] Kiểm tra từ đối xứng</h3>
+    <div>
+        <input id="array" type="text" placeholder="Nhập chuỗi ký tự">
+        <button style="color: rgb(24, 23, 23); background-color: rgb(214, 131, 174)" onclick="isPalindrome()">Kiểm tra tính đối xứng</button>
+        <h4>Kết quả: </h4>
+        <span id="check"></span>
+    </div>
+    <script>
+        function isPalindrome() {
+            let input = document.getElementById("array").value;
+            let array = input.split("");
+            let first = 0;
+            let j = array.length;
+            for (let i = 0; i <= j/2 ; i++) {
+                let last = array.length-1;
+                if (array[first] === array[last]) {
+                    array.shift();
+                    array.pop();
+                    if (array.length <= 1) {
+                        document.getElementById("check").innerHTML = "là chuỗi đối xứng.";
+                        break;
+                    }
+                }
+                else {
+                    document.getElementById("check").innerHTML = "chuỗi không đối xứng";
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
