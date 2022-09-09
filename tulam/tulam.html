@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEh5Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+</html>
+
+<body>
+    </td>
+    </tr>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="11212.html">
+                <h1>ThẮng Dior</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sản Phẩm
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="11212.html">hello</a></li>
+                            <li><a class="dropdown-item" href="#">Ano</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Giới Thiệu</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <form>
+        <div>
+
+            <textarea placeholder="Nhập mô tả sản phẩm" id="motasp" cols="185" rows="4"></textarea>
+        </div>
+        <table id="timkiem1" width="1480px">
+            <tr>
+                <td width="250x">
+                    <input type="search" placeholder="Kiểm tra sản phẩm" id="timkiem" />
+                    <input id="timkiem1" type="button" value="Tìm kiếm" onclick="timkiem_sp();" />
+                </td>
+                <td width="980x">
+                    <input type="text" placeholder="Nhập tên sản phẩm" id="newProduct" />
+                    <input type="text" placeholder="Nhập giá sản Phẩm" id="Gia" />
+                    <input type="text" id="img" placeholder="Nhập link ảnh">
+                    <input id="addd" type="button" value="Thêm Sản Phẩm" onclick="them_sp();" />
+                </td>
+                <td>
+                </td>
+                <td width="100x">
+                    <input id="delete1" type="button" value="Xóa tất cả sản phẩm" onclick="xoaall();" />
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table id="bang" style="width: 1500px">
+            <tr style="text-align: center">
+                <td width="135px">
+                    <b id="soluong"></b>
+                </td>
+                <td style="text-align: center" width="100px"><b>Tên sản phẩm</b></td>
+                <td style="text-align: center" width="100px"><b>Giá</b></td>
+                <td style="text-align: center" width="600px">
+
+                <td style="text-align: center" width="80px">
+                    <b>Ảnh</b>
+                </td>
+                </td>
+                <td style="text-align: center" width="115px">
+                    <b>Chỉnh sửa</b>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </form>
+    <span id="bang1"></span>
+    <script src="./motajs.js"></script>
+    <table>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <tr class="product-deltals">
+                        <td>
+                            <img class="img-prd"
+                                src="https://clmensstore.com/wp-content/uploads/2022/01/dior-sauvage-elixir-1.jpg"
+                                width="200" height="200" alt="">
+                </div>
+                <h5 class="content-product-h5">Nước hoa Dior Sauvage Elixir</h5>
+                <div class="content-product-deltals">
+                    <a href="https://namperfume.net/products/dior-sauvage-parfum?variant=1042884885&source=googleshop&ref=gcli-Cj0KCQjwguGYBhDRARIsAHgRm48YlCj7PmUuGAIeoZJxcAt3W8FgFxhEjaP8xE8-pO1krzpyOlQPv7UaAtNYEALw_wcB">Xem chi tiết</a>
+                    <div class="price">
+                        <span class="money">3.500.000₫</span>
+                    </div>
+                    <button onclick="mua_ngay()" id="mua_ngay_1">Mua ngay</button>
+                </div>
+                </td>
+                <td>
+                    <img class="img-prd"
+                        src="https://product.hstatic.net/1000025647/product/miss_dior_eau_de_parfum_1351023acf6f493c8f4fdcfd730aa211_master.jpg"
+                        width="200" height="200" alt="">
+
+                    <div class="content-product">
+                        <h5 href="11212.html" class="content-product-h5">Nước Hoa Miss Dior Eau De Parfum - Nồng Nàn, Quyến Rũ</h5>
+                        <div class="content-product-deltals">
+                            <a
+                                href="https://vuahanghieu.com/nuoc-hoa-miss-dior-eau-de-parfum-100ml-ban-2021-ph034211?tr=&adgroupid=&campaignid=15570428822&gclid=Cj0KCQjwguGYBhDRARIsAHgRm48RK4UoeGQuxFbmi9iiGyoo25VEoMOPSG0UJ6gM0bevJ8acXRzfxdoaAvyVEALw_wcB">Xem
+                                chi tiết</a>
+                            <div class="price">
+                                <span class="money">3.180.000đ</span>
+                            </div>
+                            <button onclick="mua_ngay()" id="mua_ngay_1">Mua ngay</button>
+                        </div>
+                </td>
+                <td>
+                    <img class="img-prd"
+                        src="https://theperfume.vn/wp-content/uploads/2018/08/Nuoc-hoa-dior-jadore-eau-de-parfum-75ml.png"
+                        width="200" height="200" alt="">
+                    <div class="content-product">
+                        <h5 class="content-product-h5">Nước hoa Dior J’adore Eau De Parfum</h5>
+                        <div class="content-product-deltals">
+                            <a href="https://theperfume.vn/nuoc-hoa/nuoc-hoa-dior-jadore-infinissime-eau-de-parfum-100ml/?gclid=Cj0KCQjwguGYBhDRARIsAHgRm49YSypRHeFS-X6Bmy068-GtBf1rWAavx7hQ9f1445CczAPmwABhDnMaAn7-EALw_wcB">Xem chi tiết</a>
+                            <div class="price">
+                                <span class="money">3.300.000₫</span>
+                            </div>
+                            <button onclick="mua_ngay()" id="mua_ngay_1">Mua ngay</button>
+                        </div>
+                </td>
+                </tr>
+            </div>
+            <div class="col">
+                <tr class="product-deltals">
+
+                    <td>
+                        <img class="img-prd"
+                            src="https://cdn.chiaki.vn/unsafe/0x800/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/seller/1637746774-90fea5fa90bfef606ed4723360d8468a.jpg"
+                            width="200" height="200" alt="">
+                        <div class="content-product">
+                            <h5 class="content-product-h5">Nước Hoa Dior Poison Girl Eau De Toilette Quyến Rũ</h5>
+                            <div class="content-product-deltals">
+                                <a href="https://authentic-shoes.com/products/nuoc-hoa-dior-poison-girl-edt?variant=1078677697&source=googleshop&gclid=Cj0KCQjwguGYBhDRARIsAHgRm4_J4wGmt-1yNNTtDUHeiLwNlEdls8knqdec_CSooa4kf8ADYSCfrbkaAk-xEALw_wcB">Xem chi tiết</a>
+                                <div class="price">
+                                    <span class="money"> 4.200.000₫</span>
+                                </div>
+                                <button onclick="mua_ngay()" id="mua_ngay_1">Mua ngay</button>
+                            </div>
+                    </td>
+                    <td>
+                        <img class="img-prd"
+                            src="https://orchard.vn/wp-content/uploads/2020/11/nuoc-hoa-dior-lucky-orchard.vn-3.jpg"
+                            width="200" height="200" alt="">
+                        <div class="content-product">
+                            <h5 class="content-product-h5">Dior Lucky For Woman And Men </h5>
+                            <div class="content-product-deltals">
+                                <a href="https://authentic-shoes.com/products/nuoc-hoa-dior-lucky-edp?variant=1078675324&source=googleshop&gclid=Cj0KCQjwguGYBhDRARIsAHgRm48OZlFKgUsD35ZoPBOII_EF7Y054PKBLtofZzq_XwC4bAoWN-PB3qsaAlIkEALw_wcB">Xem chi tiết</a>
+                                <div class="price">
+                                    <span class="money">8.500.000₫</span>
+                                </div>
+                                <button onclick="mua_ngay()" id="mua_ngay_1">Mua ngay</button>
+                            </div>
+                    </td>
+                    <td>
+                        <img class="img-prd"
+                            src="https://product.hstatic.net/1000025647/product/dior-joy-intense_48e222bb0f4d4133bcc84d3c97ef6cf9_master.png"
+                            width="200" height="200" alt="">
+                        <div class="content-product">
+                            <h5 class="content-product-h5">Nước Hoa Dior Joy EDP Intense - Thơm Lâu Hơn</h5>
+                            <div class="content-product-deltals">
+                                <a href="https://thegioisonmoi.com/products/nuoc-hoa-dior-joy-edp-intense-mau-moi-vua-ra-mat">Xem chi tiết</a>
+                                <div class="price">
+                                    <span class="money">1.999.000₫</span>
+                                </div>
+                                <button onclick="mua_ngay()" id="mua_ngay_1">Mua ngay</button>
+                            </div>
+                    </td>
+                </tr>
+            </div>
+            <div class="col">
+                <tr>
+
+                    <td>
+                        <img class="img-prd"
+                            src="https://allimages.sgp1.digitaloceanspaces.com/pedrovietnamcom/2020/10/1601662394_279_Top-6-nuoc-hoa-Dior-duoc-ua-chuong-nhat.jpg"
+                            width="200" height="200" alt="">
+                        <div class="content-product">
+                            <h5 class="content-product-h5">Dior Homme Sport</h5>
+                            <div class="content-product-deltals">
+                                <a href="https://vperfume.vn/products/dior-homme-sport-edt">Xem chi tiết</a>
+                                <div class="price">
+                                    <span class="money">2.850.000đ</span>
+                                </div>
+                                <button onclick="mua_ngay()" id="mua_ngay_1">Mua ngay</button>
+                            </div>
+                    </td>
+                    <td>
+                        <img class="img-prd"
+                            src="https://trungtamgiasi.vn/wp-content/uploads/2021/02/set-nuoc-hoa-dior-mini-4-chai-trai-tim-co-thom-khong.jpg"
+                            width="200" height="200" alt="">
+                        <div class="content-product">
+                            <h5 class="content-product-h5"> Set Nước Hoa Dior Mini 4 Chai Trái Tim</h5>
+                            <div class="content-product-deltals">
+                                <a href="https://thegioimyphambd.vn/san-pham/gift-set-nuoc-hoa-dior-mini-phap-4pcsx5ml/">Xem chi tiết</a>
+                                <div class="price">
+                                    <span class="money">650.00đ</span>
+                                </div>
+                                <button onclick="mua_ngay()" id="mua_ngay_1">Mua ngay</button>
+                            </div>
+                    </td>
+                    <td>
+                        <img class="img-prd"
+                            src="https://product.hstatic.net/1000340570/product/dior-addict-eau-fraiche-50ml_bf6639d7a80a46b0b3c7f5f5f6e973b0_master.jpg"
+                            width="200" height="200" alt="">
+                        <div class="content-product">
+                            <h5 class="content-product-h5"> Dior Addict Eau Fraiche</h5>
+                            <div class="content-product-deltals">
+                                <a href="https://www.google.com/search?q=Dior+Addict+Eau+Fraiche&rlz=1C1CHZN_viVN1016VN1016&oq=Dior+Addict+Eau+Fraiche&aqs=chrome.0.69i59j0i22i30l6j69i60.1019j0j7&sourceid=chrome&ie=UTF-8">Xem chi tiết</a>
+
+                                <div class="price">
+                                    <span class="money">2.030.000đ</span>
+                                </div>
+                                <button onclick="mua_ngay()" id="mua_ngay_1">Mua ngay</button>
+                            </div>
+                    </td>
+
+                </tr>
+            </div>
+        </div>
+        </div>
+
+<script>
+    function mua_ngay(){
+       prompt ('Nhập số thẻ ngân hàng')
+    }
+</script>
+
+
+
+
+
+    </table>
+    </div>
+    </section>
+</body>
+
+</html>
